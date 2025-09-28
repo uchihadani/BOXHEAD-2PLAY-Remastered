@@ -1,7 +1,7 @@
 using Interfaces;
 using UnityEngine;
 
-public class EnemySpere : Enemy, IParalizable
+public class EnemySpere : Enemy, IParalizable, IDamageable
 {
     public void Paralize()
     {

@@ -794,7 +794,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae90f88e5c5b0704ca4a90f9e6bbbe67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
+  baseSpeed: 5
+  runMultiplier: 2
   camera: {fileID: 330585546}
   vida: 100
   mensajeTexto: {fileID: 1372474646}
@@ -1267,7 +1268,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 1771431649692904960, guid: a966b4824e8a1544381bf24ce11753d8, type: 3}
   - {fileID: 2568165569616205460, guid: 2dbec5d6427af3747b9038000e0d4dcf, type: 3}
-  - {fileID: 4489639395476931035, guid: 56ab1297ea3e58f44970238deb552361, type: 3}
+  - {fileID: 5391054177745327092, guid: 56ab1297ea3e58f44970238deb552361, type: 3}
   spawnPoints:
   - {fileID: 1513692104}
   - {fileID: 1555533165}

@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MovementPlayer : MonoBehaviour
 {
-    [SerializeField] float speed = 5f;
+    [SerializeField] float baseSpeed = 7f;
+    [SerializeField] float runMultiplier = 2f; 
+                     private float speed;
     [SerializeField] new Transform camera;
     [SerializeField] protected int vida;
     [SerializeField] TextMeshProUGUI mensajeTexto;
@@ -24,8 +26,17 @@ public class MovementPlayer : MonoBehaviour
         dir.y = 0; 
         if (dir.magnitude > 1) dir.Normalize();
 
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = baseSpeed * runMultiplier;
+        }
+        else
+        {
+            speed = baseSpeed;
+        }
 
         transform.Translate(dir * speed * Time.deltaTime, Space.World);
+
     }
 
     public void PlayerDied(int damage)

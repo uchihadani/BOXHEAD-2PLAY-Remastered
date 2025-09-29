@@ -6,15 +6,9 @@ public class MuestraPuntaje : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textoPuntajeFinal;
 
-    private void Update()
+    private void Start()
     {
-        if(ScoreManager.Instance == null)
-        {
-            textoPuntajeFinal.text = "Puntaje Final: 0 ";
-        }
-        else
-        {
-            textoPuntajeFinal.text = "Puntaje Final: " + ScoreManager.Instance.score.ToString();
-        }
+        // ?? Ahora lee directamente el puntaje final
+        textoPuntajeFinal.text = "Puntaje Final: " + ScoreManager.PuntajeFinal.ToString();
     }
 }

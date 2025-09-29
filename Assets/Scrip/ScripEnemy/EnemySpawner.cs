@@ -85,11 +85,11 @@ public class EnemySpawner : MonoBehaviour
         oleadaA++;
         if(oleadaA < enemigosPorOleada.Length -1)
         {
-            ActualizarMensaje("Oleada " + oleadaA + " terminada. Presiona E para iniciar la siguiente oleada");
+            ActualizarMensaje("Oleada " + oleadaA + " terminada. Presiona X para iniciar la siguiente oleada");
         }
         else if (oleadaA == enemigosPorOleada.Length -1)
         {
-            ActualizarMensaje("Ultima oleada completada! Presiona E para iniciar la oleada final");
+            ActualizarMensaje("Ultima oleada completada! Presiona X para iniciar la oleada final");
         }
         else
         {
